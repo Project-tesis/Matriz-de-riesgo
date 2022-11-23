@@ -1,3 +1,10 @@
+let test1=document.getElementById("test1");
+let arr=[];
+
+test1.addEventListener("change",{
+    arr.splice(index, 0, item)
+})
+
 function addData(chart, label, data) {
     chart.data.labels.push(label);
     chart.data.datasets.forEach((dataset) => {
@@ -7,9 +14,4 @@ function addData(chart, label, data) {
     chart.update();
 }
 
-function addList(index,item){
-    arr=[];
-    arr.splice(index, 0, item);
-    console.log(arr);
-}
 

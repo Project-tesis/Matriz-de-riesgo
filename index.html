@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Document</title>
-    <script type="text/javascript" src="/js/function.js"></script>
+    <script type="text/javascript" src="js/function.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,9 +15,10 @@
   <form class="container" name="0">
     <div class="row">
       <div class="col-sm-4">
+        <script>var a=0</script>
         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">¿La base de datos se encuentra cifrada?</label>
-        <select class="custom-select custom-select-sm" onchange="addList(value,value);">
-          <option value2=0 selected>Open this select menu </option>
+        <select id="test1" class="custom-select custom-select-sm">
+          <option selected>Open this select menu </option>
           <option value="1">Si</option>
           <option value="2">No</option>
           <option value="3">No aplica</option>
@@ -25,14 +26,15 @@
     </div>
 
       <div class="col-sm-4">
+        <script>var b=1</script>
         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">¿La base de datos se encuentra cifrada?</label>
-        <select class="custom-select custom-select-sm">
+        <select class="custom-select custom-select-sm" onchange="addList(b,value);">
             <option selected>Open this select menu</option>
             <option value="1">Si</option>
             <option value="2">No</option>
             <option value="3">No aplica</option>
         </select>
-          </div>
+      </div>
 
       <div class="col-sm-4">
             <label class="my-1 mr-2" for="inlineFormCustomSelectPref">¿La base de datos se encuentra cifrada?</label>
@@ -42,7 +44,7 @@
                 <option value="2">No</option>
                 <option value="3">No aplica</option>
             </select>
-              </div>
+        </div>
     </div>
 
 
@@ -73,12 +75,6 @@
         </select>
           </div>
     </div>
-
-
-
-
-
-
 
     <div class="row">
       <div class="col-sm-4">
