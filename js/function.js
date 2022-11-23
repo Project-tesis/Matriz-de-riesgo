@@ -6,3 +6,8 @@ function addData(chart, label, data) {
 
     chart.update();
 }
+
+function addList(index,item){
+    arr.insert(index,item)
+    console.log(arr)
+}
