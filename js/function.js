@@ -1,3 +1,5 @@
+const arr = [];
+
 function addData(chart, label, data) {
     chart.data.labels.push(label);
     chart.data.datasets.forEach((dataset) => {
@@ -8,7 +10,6 @@ function addData(chart, label, data) {
 }
 
 function addList(index,item){
-    arr=[];
     arr.splice(index, 0, item);
     console.log(arr);
 }
