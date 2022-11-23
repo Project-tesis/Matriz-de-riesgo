@@ -8,7 +8,8 @@ function addData(chart, label, data) {
 }
 
 function addList(index,item){
-    arr.insert(index,item)
-    console.log(arr)
+    arr=[];
+    arr.splice(index, 0, item);
+    console.log(arr);
 }
 
