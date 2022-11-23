@@ -11,3 +11,4 @@ function addList(index,item){
     arr.insert(index,item)
     console.log(arr)
 }
+
