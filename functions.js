@@ -20,7 +20,7 @@ let botonEnviar = document.getElementById('botonEnviar')
 let arr=[]
 let arr2=[]
 let arr3=[]
-var final=[]
+var data=[]
 var i=0, sum=0, sum2=0;
 
 botonEnviar.addEventListener('click', () => {
@@ -65,6 +65,7 @@ botonEnviar.addEventListener('click', () => {
     avg3=0
     arr=[]
     arr2=[]
+    removeData(myChart)
     addData(myChart,'Probabilidad de impacto', arr3[0])
     addData(myChart,'Severidad del impacto', arr3[1])
     addData(myChart,'Criticidad final', arr3[2])
@@ -76,10 +77,10 @@ const ctx = document.getElementById('myChart');
 const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: [],
+      labels: ['Probabilidad de impacto','Severidad del impacto','Criticidad final'],
       datasets: [{
         label: 'Promedio',
-        data: [],
+        data: [0,0,0],
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
         borderColor: 'rgb(255, 99, 132)',
