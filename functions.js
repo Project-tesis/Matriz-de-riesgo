@@ -19,10 +19,12 @@ let botonEnviar = document.getElementById('botonEnviar')
 
 let arr=[]
 let arr2=[]
+let arr3=[]
+var final=[]
+var i=0, sum=0, sum2=0;
 
 botonEnviar.addEventListener('click', () => {
     let selects = document.querySelectorAll('select')
-
     selects.forEach(select => {
         if (select.value)
             arr.push(parseInt(select.value))
@@ -42,14 +44,94 @@ botonEnviar.addEventListener('click', () => {
 
     console.log(arr);
     console.log(arr2);
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        sum2 += arr2[i];
+    }
+    var avg = sum / arr.length;
+    arr3.push(avg)
+    var avg2 = sum2 / arr.length;
+    arr3.push(avg2)
+    var avg3 = (avg+avg2)/2;
+    arr3.push(avg3)
+    console.log(avg);
+    console.log(avg2);
+    console.log(avg3);
+    console.log(arr3);
+    sum=0
+    sum2=0
+    avg=0
+    avg2=0
+    avg3=0
     arr=[]
     arr2=[]
+    addData(myChart,'Probabilidad de impacto', arr3[0])
+    addData(myChart,'Severidad del impacto', arr3[1])
+    addData(myChart,'Criticidad final', arr3[2])
+    arr3=[]
 })
+
+const ctx = document.getElementById('myChart');
+
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: [],
+      datasets: [{
+        label: 'Promedio',
+        data: [],
+        fill: true,
+        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        borderColor: 'rgb(255, 99, 132)',
+        pointBackgroundColor: 'rgb(255, 99, 132)',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: 'rgb(255, 99, 132)'
+      }]
+    }
+  });
+
 
 function addData(chart, label, data) {
     chart.data.labels.push(label);
     chart.data.datasets.forEach((dataset) => {
         dataset.data.push(data);
+    });
+
+    chart.update();
+}
+
+function removeData(chart) {
+    chart.data.labels.pop();
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data.pop();
+    });
+
+    chart.update();
+}
+
+function removeData(chart, val) {
+    // Delete entry from the database
+    delete data[val];
+
+    // Re-populate and re-render the chart
+    chart.data.labels = Object.keys(data);
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data = Object.values(data);
+    });
+
+    chart.update();
+}
+
+
+function updateChart(chart, dataObj) {
+    // Store data into the database
+    Object.assign(data, dataObj);
+
+    // Fetch data from the database and replace old data
+    chart.data.labels = Object.keys(data);
+    chart.data.datasets.forEach((dataset) => {
+        dataset.data = Object.values(data);
     });
 
     chart.update();
