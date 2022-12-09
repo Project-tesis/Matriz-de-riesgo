@@ -26,11 +26,9 @@ var i=0, sum=0, sum2=0;
 botonEnviar.addEventListener('click', () => {
     let selects = document.querySelectorAll('select')
     selects.forEach(select => {
-        if (select.value)
+        if (select.value>0)
             arr.push(parseInt(select.value))
-            if (select.value == 0)
-                arr2.push(parseInt(select.value))
-            else if (parseInt(select.value) > 0 && parseInt(select.value) < 4)
+            if (parseInt(select.value) > 0 && parseInt(select.value) < 4)
                 arr2.push(parseInt(select.value))
             else if (parseInt(select.value) >= 4 && parseInt(select.value) < 7)
                 arr2.push(parseInt(select.value)+2)
@@ -54,10 +52,10 @@ botonEnviar.addEventListener('click', () => {
     arr3.push(avg2)
     var avg3 = (avg+avg2)/2;
     arr3.push(avg3)
+    console.log(arr3);
     console.log(avg);
     console.log(avg2);
     console.log(avg3);
-    console.log(arr3);
     sum=0
     sum2=0
     avg=0
@@ -65,6 +63,7 @@ botonEnviar.addEventListener('click', () => {
     avg3=0
     arr=[]
     arr2=[]
+    info(arr3);
     removeData(myChart)
     addData(myChart,'Probabilidad de impacto', arr3[0])
     addData(myChart,'Severidad del impacto', arr3[1])
@@ -136,4 +135,30 @@ function updateChart(chart, dataObj) {
     });
 
     chart.update();
+}
+
+function info(arr3){
+    var box = document.createElement('div');
+    box.style.width = '1000px';
+    box.style.height = '100px';
+    box.style.backgroundColor = 'orange';
+    box.style.border = '1px solid black';
+    box.style.borderRadius = '5px';
+    box.style.margin = 'auto';
+    box.style.textAlign = 'center';
+    box.style.position = 'absolute';
+    box.style.right = '0';
+    box.style.left = '0';
+    box.style.lineHeight = '100px';
+    if (arr3[2] > 0 && arr3[2] < 4)
+        box.innerHTML = 'La PYME se encuentra con una exposición baja ante un ciberataque';
+    else if (arr3[2] >= 4 && arr3[2] < 7)
+        box.innerHTML = 'La PYME se encuentra con una exposición media ante un ciberataque';
+    else if (arr3[2] >= 7 && arr3[2] < 9)
+        box.innerHTML = 'La PYME se encuentra con una exposición alta ante un ciberataque';
+    else if (arr3[2] >= 9 && arr3[2] <= 10)
+        box.innerHTML = 'La PYME se encuentra con una exposición crítica ante un ciberataque';
+    else
+        box.innerHTML = 'La PYME no cumple los requisitos para una evaluación de riesgos';
+    document.body.appendChild(box);
 }
