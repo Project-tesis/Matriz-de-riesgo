@@ -81,7 +81,7 @@ const myChart = new Chart(ctx, {
         label: 'Promedio',
         data: [0,0,0],
         fill: true,
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        backgroundColor: 'rgba(255, 159, 64, 0.8)',
         borderColor: 'rgb(255, 99, 132)',
         pointBackgroundColor: 'rgb(255, 99, 132)',
         pointBorderColor: '#fff',

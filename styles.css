@@ -684,6 +684,11 @@ progress {
   margin-top: var(--bs-gutter-y);
 }
 
+.column {
+  float: left;
+  width: 33%;
+}
+
 .col {
   flex: 1 0 0%;
 }
