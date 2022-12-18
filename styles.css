@@ -641,6 +641,12 @@ progress {
   margin-left: auto;
 }
 
+.container2 {
+  display: flex; /* Hacemos que el elemento sea un elemento flex */
+  justify-content: center; /* Centramos el elemento utilizando la propiedad "justify-content: center" */
+  margin-left: 150px; /* Añadimos un margen izquierdo de 100 píxeles */
+}
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
