@@ -162,3 +162,4 @@ function info(arr3){
         box.innerHTML = 'La PYME no cumple los requisitos para una evaluación de riesgos';
     document.body.appendChild(box);
 }
+
