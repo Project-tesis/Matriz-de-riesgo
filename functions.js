@@ -151,13 +151,13 @@ function info(arr3){
     box.style.left = '0';
     box.style.lineHeight = '100px';
     if (arr3[2] > 0 && arr3[2] < 4)
-        box.innerHTML = 'La PYME se encuentra con una exposición baja ante un ciberataque';
+        box.innerHTML = 'La PYME cuenta con un correcto cumplimiento de controles en seguridad de la información';
     else if (arr3[2] >= 4 && arr3[2] < 7)
-        box.innerHTML = 'La PYME se encuentra con una exposición media ante un ciberataque';
+        box.innerHTML = 'La PYME cuenta con una exposición media en relación a los cumplimientos de controles en seguridad de la información';
     else if (arr3[2] >= 7 && arr3[2] < 9)
-        box.innerHTML = 'La PYME se encuentra con una exposición alta ante un ciberataque';
+        box.innerHTML = 'La PYME se encuentra con una exposición alta, debido a los bajos cumplimientos de controles en seguridad de la información';
     else if (arr3[2] >= 9 && arr3[2] <= 10)
-        box.innerHTML = 'La PYME se encuentra con una exposición crítica ante un ciberataque';
+        box.innerHTML = 'La PYME se encuentra con una exposición crítica, debido a que no cuenta con los minímos cumplimientos de controles en seguridad de la información';
     else
         box.innerHTML = 'La PYME no cumple los requisitos para una evaluación de riesgos';
     document.body.appendChild(box);
