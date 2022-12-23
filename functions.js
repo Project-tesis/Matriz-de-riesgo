@@ -157,7 +157,7 @@ function info(arr3){
     else if (arr3[2] >= 7 && arr3[2] < 9)
         box.innerHTML = 'La PYME se encuentra con una exposición alta, debido a los bajos cumplimientos de controles en seguridad de la información';
     else if (arr3[2] >= 9 && arr3[2] <= 10)
-        box.innerHTML = 'La PYME se encuentra con una exposición crítica, debido a que no cuenta con los minímos cumplimientos de controles en seguridad de la información';
+        box.innerHTML = 'La PYME se encuentra con una exposición crítica, pues no cuenta con los controles necesarios en seguridad de la información';
     else
         box.innerHTML = 'La PYME no cumple los requisitos para una evaluación de riesgos';
     document.body.appendChild(box);
