@@ -145,7 +145,9 @@ function info(arr3){
     var box = document.createElement('div');
     box.style.width = '1000px';
     box.style.height = '100px';
-    box.style.backgroundColor = 'orange';
+    box.style.backgroundColor = '#FFB6C1';  /* rosa claro */
+    //box.style.backgroundColor = '#FFFFE0';  /* amarillo claro */
+    //box.style.backgroundColor = '#FFA07A';  /* naranja claro */
     box.style.border = '1px solid black';
     box.style.borderRadius = '5px';
     box.style.margin = 'auto';
