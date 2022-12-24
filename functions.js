@@ -42,33 +42,14 @@ botonEnviar.addEventListener('click', () => {
 
     console.log(arr);
     console.log(arr2);
-    for (var i = 0; i < arr.length; i++) {
-        sum += arr[i];
-        sum2 += arr2[i];
-    }
-    var avg = sum / arr.length;
-    arr3.push(avg)
-    var avg2 = sum2 / arr.length;
-    arr3.push(avg2)
-    var avg3 = (avg+avg2)/2;
-    arr3.push(avg3)
-    console.log(arr3);
-    console.log(avg);
-    console.log(avg2);
-    console.log(avg3);
-    sum=0
-    sum2=0
-    avg=0
-    avg2=0
-    avg3=0
-    arr=[]
-    arr2=[]
+    calculate();
     info(arr3);
     removeData(myChart)
     addData(myChart,'Probabilidad de impacto', arr3[0])
     addData(myChart,'Severidad del impacto', arr3[1])
     addData(myChart,'Criticidad final', arr3[2])
     arr3=[]
+    
 })
 
 const ctx = document.getElementById('myChart');
@@ -91,6 +72,29 @@ const myChart = new Chart(ctx, {
     }
   });
 
+function calculate(){
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+        sum2 += arr2[i];
+    }
+    var avg = sum / arr.length;
+    arr3.push(avg)
+    var avg2 = sum2 / arr.length;
+    arr3.push(avg2)
+    var avg3 = (avg+avg2)/2;
+    arr3.push(avg3)
+    console.log(arr3);
+    console.log(avg);
+    console.log(avg2);
+    console.log(avg3);
+    sum=0
+    sum2=0
+    avg=0
+    avg2=0
+    avg3=0
+    arr=[]
+    arr2=[]
+}
 
 function addData(chart, label, data) {
     chart.data.labels.push(label);
