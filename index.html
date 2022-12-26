@@ -621,7 +621,15 @@
     </select>
   </div>
 
-  
+  <div class="column">
+    <label class="my-1 mr-2">¿La organización utiliza medidas de eliminación o sobrescritura segura de datos sensibles y programas informáticos con licencia antes de la eliminación o reutilización de los equipos que los contienen?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
   
  <div class="column">
     <label class="my-1 mr-2">¿Cuentan con protección de la información de los dispositivos de punto final de usuario? (Por ejemplo, computadores)</label>
@@ -654,26 +662,6 @@
   </div>
 
   <div class="column">
-    <label class="my-1 mr-2">¿Se aplican procedimientos para una autenticación segura en sus tecnologías?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="2">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Se restringe y controla el uso de utilidades que puedan ser capaces de invalidar los controles de sistema y de la aplicación?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="2">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
     <label class="my-1 mr-2">¿Se administra adecuadamente el acceso de lectura y escritura al código fuente, herramientas de desarrollo y las bibliotecas de software?</label>
     <select class="custom-select custom-select-sm">
       <option selected disabled value="">Selecciona una opción</option>
@@ -684,21 +672,11 @@
   </div>
 
   <div class="column">
-    <label class="my-1 mr-2">¿Se encuentran definidas e implementadas reglas para el uso eficaz de la criptografía?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="3">Si</option>
-      <option value="6">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Son controlados en la organización los cambios, los procesos de negocios, instalaciones de tratamiento de la información y los sistemas que afectan la seguridad de la información?</label>
+    <label class="my-1 mr-2">¿Se aplican procedimientos para una autenticación segura en sus tecnologías?</label>
     <select class="custom-select custom-select-sm">
       <option selected disabled value="">Selecciona una opción</option>
       <option value="2">Si</option>
-      <option value="8">No</option>
+      <option value="10">No</option>
       <option value="0">No aplica</option>
     </select>
   </div>
@@ -724,171 +702,11 @@
   </div>
 
   <div class="column">
-    <label class="my-1 mr-2">¿Los relojes de todos los sistemas de tratamiento de la información se encuentran sincronizados con una única fuente de tiempo precisa y acordada?</label> <!--AQUIIIIIIIII-->
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="2">Si</option>
-      <option value="5">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Se implementan procedimiento y medidas para gestionar de forma segura la instalación de software en los sistemas operativos?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="2">Si</option>
-      <option value="8">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
     <label class="my-1 mr-2">¿Se obtiene información, se evalúa la exposición y se toman medidas con respecto a las vulnerabilidades técnicas de los sistemas de información en uso?</label>
     <select class="custom-select custom-select-sm">
       <option selected disabled value="">Selecciona una opción</option>
       <option value="1">Si</option>
       <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Se tiene una planificación para la protección de los sistemas durante las pruebas de auditoría?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="2">Si</option>
-      <option value="8">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Se supervisa y ajusta la utilización de recursos, así como realizar proyecciones de los requisitos futuros de capacidad, que garantizan el rendimiento requerido del sistema?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Los entornos de desarrollo, prueba y producción se encuentran separados y protegidos?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Se realizan y verifican periódicamente copias de seguridad de la información, del software y del sistema?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Las redes son gestionadas y controladas para proteger la información de los sistemas y aplicaciones?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Son identificados, aplicados y controlados los mecanismos de seguridad, los niveles y requisitos del servicio de red?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Los servicios de información, los usuarios y los sistemas de información están segregados en distintas redes?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Los requisitos de seguridad son identificados, específicos y aprobados cuando se desarrollan o adquieren aplicaciones?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="2">Si</option>
-      <option value="8">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-  
-  <div class="column">
-    <label class="my-1 mr-2">¿Están establecidas políticas de seguridad para el desarrollo de aplicaciones y sistemas?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-  
-  <div class="column">
-    <label class="my-1 mr-2">¿Se establecen, documentan y mantienen los principios para la ingeniería de sistemas seguros?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="2">Si</option>
-      <option value="8">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-  
-  <div class="column">
-    <label class="my-1 mr-2">¿La organización dirige, controla y revisa el desarrollo de sistemas subcontratados?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-  
-  <div class="column">
-    <label class="my-1 mr-2">¿Se definen y aplican las pruebas de seguridad durante el desarrollo de software?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="10">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-  
-  <div class="column">
-    <label class="my-1 mr-2">¿La información de las pruebas de seguridad es seleccionada, protegida y gestionada adecuadamente?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="1">Si</option>
-      <option value="9">No</option>
-      <option value="0">No aplica</option>
-    </select>
-  </div>
-
-  <div class="column">
-    <label class="my-1 mr-2">¿Las instalaciones de procesamiento de la información se implementaron con la redundancia suficiente para cumplir los requisitos de disponibilidad?</label>
-    <select class="custom-select custom-select-sm">
-      <option selected disabled value="">Selecciona una opción</option>
-      <option value="2">Si</option>
-      <option value="8">No</option>
       <option value="0">No aplica</option>
     </select>
   </div>
@@ -934,7 +752,97 @@
   </div>
 
   <div class="column">
+    <label class="my-1 mr-2">¿Se realizan y verifican periódicamente copias de seguridad de la información, del software y del sistema?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Las instalaciones de procesamiento de la información se implementaron con la redundancia suficiente para cumplir los requisitos de disponibilidad?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="2">Si</option>
+      <option value="8">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Se producen, almacenan, protegen y analizan registros que recogen actividades, excepciones, fallos y otros eventos relevantes?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="8">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
     <label class="my-1 mr-2">¿Se supervisan las redes, los sistemas y las aplicaciones para detectar comportamientos anómalos y se toman medidas adecuadas para evaluar posibles incidentes de seguridad de la información?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Los relojes de todos los sistemas de tratamiento de la información se encuentran sincronizados con una única fuente de tiempo precisa y acordada?</label> <!--AQUIIIIIIIII-->
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="2">Si</option>
+      <option value="5">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Se restringe y controla el uso de utilidades que puedan ser capaces de invalidar los controles de sistema y de la aplicación?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="2">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Se implementan procedimiento y medidas para gestionar de forma segura la instalación de software en los sistemas operativos?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="2">Si</option>
+      <option value="8">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Las redes son gestionadas y controladas para proteger la información de los sistemas y aplicaciones?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Son identificados, aplicados y controlados los mecanismos de seguridad, los niveles y requisitos del servicio de red?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Los servicios de información, los usuarios y los sistemas de información están segregados en distintas redes?</label>
     <select class="custom-select custom-select-sm">
       <option selected disabled value="">Selecciona una opción</option>
       <option value="1">Si</option>
@@ -954,10 +862,40 @@
   </div>
 
   <div class="column">
-    <label class="my-1 mr-2">¿Se producen, almacenan, protegen y analizan registros que recogen actividades, excepciones, fallos y otros eventos relevantes?</label>
+    <label class="my-1 mr-2">¿Se encuentran definidas e implementadas reglas para el uso eficaz de la criptografía?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="3">Si</option>
+      <option value="6">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Están establecidas políticas de seguridad para el desarrollo de aplicaciones y sistemas?</label>
     <select class="custom-select custom-select-sm">
       <option selected disabled value="">Selecciona una opción</option>
       <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Los requisitos de seguridad son identificados, específicos y aprobados cuando se desarrollan o adquieren aplicaciones?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="2">Si</option>
+      <option value="8">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+  
+  <div class="column">
+    <label class="my-1 mr-2">¿Se establecen, documentan y mantienen los principios para la ingeniería de sistemas seguros?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="2">Si</option>
       <option value="8">No</option>
       <option value="0">No aplica</option>
     </select>
@@ -972,6 +910,67 @@
       <option value="0">No aplica</option>
     </select>
   </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Se definen y aplican las pruebas de seguridad durante el desarrollo de software?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿La organización dirige, controla y revisa el desarrollo de sistemas subcontratados?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Los entornos de desarrollo, prueba y producción se encuentran separados y protegidos?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="10">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Son controlados en la organización los cambios, los procesos de negocios, instalaciones de tratamiento de la información y los sistemas que afectan la seguridad de la información?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="2">Si</option>
+      <option value="8">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿La información de las pruebas de seguridad es seleccionada, protegida y gestionada adecuadamente?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="1">Si</option>
+      <option value="9">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
+  <div class="column">
+    <label class="my-1 mr-2">¿Se tiene una planificación para la protección de los sistemas durante las pruebas de auditoría?</label>
+    <select class="custom-select custom-select-sm">
+      <option selected disabled value="">Selecciona una opción</option>
+      <option value="2">Si</option>
+      <option value="8">No</option>
+      <option value="0">No aplica</option>
+    </select>
+  </div>
+
   <button type='button' id="botonEnviar" style="width: 100px; margin-top: 10px;padding: 8px;font-size:24px; margin: auto;">Enviar</button>
 </div>
 
